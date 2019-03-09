@@ -1,0 +1,95 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/fab_margin2"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/author_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin2"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_toEndOf="@id/profile_image_view"
+            android:layout_toRightOf="@id/profile_image_view"
+            android:text="Author name" />
+
+        <TextView
+            android:id="@+id/author_nick_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin2"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_toEndOf="@+id/author_name_text_view"
+            android:layout_toRightOf="@+id/author_name_text_view"
+            android:text="Devcolibri" />
+
+        <TextView
+            android:id="@+id/creation_date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin2"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_toEndOf="@+id/author_nick_text_view"
+            android:layout_toRightOf="@+id/author_name_text_view"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="2.03.2019" />
+
+        <ImageView
+            android:id="@+id/tweet_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="@dimen/fab_margin2"
+            android:layout_marginTop="@dimen/image_margin"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/profile_image_view"
+            android:layout_toRightOf="@id/profile_image_view"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_margin"
+            android:layout_below="@id/tweet_image_view"
+            android:layout_toEndOf="@id/profile_image_view"
+            android:layout_toRightOf="@id/profile_image_view"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/retweets_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin2"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/like_text_view"
+                    style="@style/TextIcon"
+                    android:layout_width="@dimen/image_margin"
+                    android:layout_height="@dimen/image_margin"
+                    android:text="@string/fa_heart"
+                    android:textColor="@android:color/darker_gray" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

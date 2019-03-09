@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_margin2">10dp</dimen>
+    <dimen name="image_margin">25dp</dimen>
+    <dimen name="fab_size">35dp</dimen>
+    <dimen name="layout_margintop"> 70dp</dimen>
+</resources>
